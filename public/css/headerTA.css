@@ -1,0 +1,319 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fdf6e3;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-weight: 800;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 40px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+:focus {
+    outline: 3px solid #f5c76b;
+    outline-offset: 3px;
+}
+.filter-section {
+    margin-top: -40px;
+}
+
+.filter-card {
+    background: #222;
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.filter-card:hover {
+    background: #2f2f2f;
+}
+
+.filter-card i:first-child {
+    font-size: 22px;
+    color: #ff4d4d;
+}
+
+.filter-card i:last-child {
+    color: #f5c76b;
+}
+
+.filter-dropdown {
+    background: #222;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 0 0 10px 10px;
+}
+
+.filter-dropdown p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.filter-dropdown p:hover {
+    color: #f5c76b;
+}
+.filter-dropdown-full {
+    background: #222;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+
+.campus-section {
+    position: relative;
+    padding: 60px 0;
+}
+
+
+.campus-card {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: visible; /* PENTING agar gambar ikut radius */
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Menengahkan semua konten di dalam card */
+    border: 1px solid #ddd; /* Contoh tambahan agar card terlihat */
+    transition:transform 0.3s ease;
+     height: 100%;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.col-lg-4{
+    display: flex;
+}
+.campus-card img {
+     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Memastikan gambar berada di tengah */
+    border-radius: 10px;
+}
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+.campus-card:hover{
+    transform: translateY(-5px);
+    transform: scale(1.05);
+}
+.icons {
+    display: flex;
+    justify-content: center; /* Menengahkan deretan ikon */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.campus-card .icons i {
+    position: relative;
+    background: #f5c76b;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.campus-card .btn {
+    display: inline-block; /* Agar tombol mengikuti text-align center */
+    margin-top: 10px auto 0;
+    width: fit-content;
+}
+
+/* Container Utama Legend */
+.legend-panel {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(0);
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, right 0.3s ease;
+    z-index: 1000;
+    
+}
+/*area tambahan*/
+.filter-dropdown-full p.active {
+    color: #f5c76b;
+    font-weight: 500;
+    text-transform: none ;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.filter-dropdown-full p {
+    white-space: nowrap; /* 🔥 biar tidak turun baris */
+     display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    text-transform: none;
+    margin: 0;
+}
+/*area tambahan*/
+
+
+/* Panel saat tersembunyi (geser ke kanan) */
+.legend-panel.hide {
+    transform: translateY(-50%) translateX(120%);
+     pointer-events: none;
+     right: -260px;
+     
+}
+
+/* Tombol X */
+.close-btn {
+    position: absolute;
+    left: -45px; /* Posisi tombol X sedikit keluar dari panel */
+    top: 10px;
+    transform: none;
+    background: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001;
+    
+}
+
+/* Tab Legend (Gambar kedua) */
+.legend-tab {
+    position: fixed;
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #ffffff;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    display: block; /* Awalnya sembunyi */
+    z-index: 999;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    /* Secara default sembunyi karena panel sedang terbuka */
+    opacity: 0;
+    pointer-events: none;
+}
+/* Tampilkan Tab saat panel sembunyi */
+.legend-panel.hide + .legend-tab {
+    opacity: 1;
+    pointer-events: auto;
+}
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 2000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.skip-link:focus {
+    left: 10px;
+}
+/* ===== TOOLTIP ICON KAMPUS ===== */
+
+
+/*.campus-card .icons {
+    position: relative;
+}*/
+.campus-card .icons i {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Base tooltip */
+.icon-tooltip {
+    position: absolute;
+    background: #f5c76b;
+    color: #000;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 9999;
+}
+
+/* Arah */
+.icon-tooltip.top {
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-tooltip.bottom {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-tooltip.left {
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-tooltip.right {
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Tampilkan */
+.campus-card .icons i.active .icon-tooltip {
+    opacity: 1;
+}
+.icons i.disabled {
+    background: #555;
+    color: #999;
+    cursor: not-allowed;
+    pointer-events: none;
+}

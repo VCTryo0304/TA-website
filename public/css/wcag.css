@@ -1,0 +1,209 @@
+body {
+    transition: zoom 0.2s ease;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
+.skip-link:focus {
+    left: 20px;
+    top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 9999;
+}
+
+
+/* Panel */
+.access-panel {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 260px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    z-index: 2000;
+    transition: 0.3s;
+}
+.access-panel.hide {
+    transform: translateY(-50%) translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+   
+
+
+.line-spacing {
+    line-height: 1.8;
+}
+.close-btn {
+    position: absolute;
+    left: -45px; /* Posisi tombol X sedikit keluar dari panel */
+    top: 10px;
+    transform: none;
+    background: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001;
+    
+}
+/* High contrast */
+.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+/* Monochrome */
+.monochrome {
+    filter: grayscale(100%);
+}
+
+/* Cursor besar */
+.big-cursor * {
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto !important;
+}
+
+/* Hide images */
+.hide-images img {
+    display: none !important;
+}
+
+/* Pause animasi */
+.pause-anim * {
+    animation: none !important;
+    transition: none !important;
+}
+/*tambahan untuk tab aksesibilitas*/
+.accessibility-tab {
+    position: fixed;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #222;
+    padding:10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.accessibility-tab i {
+    color: red;
+    font-size: 30px;
+}
+
+/* Hover */
+.accessibility-tab:hover {
+    background: #f2ff9c;
+}
+
+/* Focus (keyboard accessibility) */
+.accessibility-tab:focus {
+    outline: 3px solid #000;
+}
+/*button*/
+.access-panel button {
+    width: 100%;
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border: none;
+    background: #f5f5f5;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+    line-height: 1.3;
+}
+
+.access-panel button:hover {
+    background: #d23b3b;
+    color: #fff;
+}
+
+/* label biar rapi */
+.access-panel label {
+    display: block;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+.access-panel h2 {
+    margin-bottom: 10px;
+}
+
+.access-panel p {
+    margin: 10px 0 5px;
+}
+
+#magnifierLens {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: none;
+    pointer-events: none;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+}
+#zoomWrapper {
+    transition: transform 0.2s ease-in-out, width 0.2s ease-in-out;
+    min-height: 100vh;
+}
+/*6 magnifier dan page zoom*/
+#magnifierLens {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #d23b3b; /* Warna merah agar terlihat jelas */
+    border-radius: 50%;
+    display: none;
+    pointer-events: none; /* Penting: agar tidak menghalangi klik kursor */
+    z-index: 10000;
+    
+    /* Efek Pembesar Modern */
+    backdrop-filter: blur(0px) brightness(1.1) contrast(1.1);
+    transform: scale(1.5); /* Mengatur tingkat zoom */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+/*  fitur setFont */
+.font-default { font-family: 'Poppins', sans-serif !important; }
+.font-sans { font-family: Arial, Helvetica, sans-serif !important; font-size: 1.1em; }
+.font-serif { font-family: 'Georgia', serif !important; }
+.font-dyslexic { font-family: 'OpenDyslexic', sans-serif !important; }
+
+/* Pastikan Anda juga mengimpor font OpenDyslexic jika ingin menggunakannya */
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://antijingoist.github.io/opendyslexic/fonts/OpenDyslexic-Regular.otf');
+}
+.voice-active::after {
+    content: "🎤 AKTIF";
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 9999;
+}

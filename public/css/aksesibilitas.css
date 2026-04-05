@@ -1,0 +1,233 @@
+/* 1===== ARIA LANDMARK===== */
+/* ===== ACCESSIBILITY FOCUS STYLE ===== */
+:focus-visible {
+    outline: 3px solid #f5c76b;
+    outline-offset: 3px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*2========ALT TXT DECORATIVE FLAG & KONTROL====*/
+
+.hide-images [aria-hidden="true"] {
+    display: none !important;
+}
+
+/*3.==========aksesbilitas panel===========*/
+.accessibility-panel {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 260px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    z-index: 2000;
+    transition: 0.3s;
+}
+.line-spacing {
+    line-height: 1.8;
+}
+.accessibility-panel.hide {
+    transform: translateY(-50%) translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.accessibility-panel button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.accessibility-tab {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+    z-index:  1999;
+    /*display: block;*/
+    opacity: 1;
+    
+    /*transition: 0.3s;*/
+    pointer-events: auto;
+}
+
+.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.high-contrast .campus-card {
+    background: #000;
+    border: 1px solid #fff;
+}
+/*6 magnifier dan page zoom*/
+#magnifierLens {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: none;
+    pointer-events: none;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+}
+/*aksesibilitas tab*/
+.accessibility-tab img {
+    display: block;
+    margin: auto;
+}
+.accessibility-tab i {
+    color: #C63A30; /* Warna merah */
+    font-size: 40px; /* Ukuran ikon, sesuaikan dengan kebutuhan */
+    cursor: pointer;
+    transition: transform 0.2s; /* Opsional: efek halus saat dihover */
+}
+
+/* Efek saat mouse mendekat (opsional) */
+.accessibility-tab i:hover {
+    color: #C63A30; /* Merah yang lebih gelap saat dihover */
+    transform: scale(1.1);
+}
+.accessibility-tab.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+/*8.fontchange dyslecsic*/
+/* Default */
+.font-default {
+    font-family: inherit;
+}
+
+/* Sans serif besar */
+.font-sans {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+/* Serif */
+.font-serif {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* OpenDyslexic */
+.font-dyslexic {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+/*10 animasi dan efek transisi sederhana*/
+    /* 🔥 Mode animasi normal (lebih smooth) */
+* {
+    transition: all 0.3s ease;
+}
+
+/* 🔥 MODE PAUSE ANIMATION */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+}
+
+/*11 high contrast mode*/
+/* 🔥 HIGH CONTRAST MODE (WCAG 4.5:1+) */
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* TEXT */
+.high-contrast p,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast h5,
+.high-contrast span,
+.high-contrast a {
+    color: #fff !important;
+}
+
+/* CARD */
+.high-contrast .campus-card {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+/* BUTTON */
+.high-contrast button,
+.high-contrast .btn {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+}
+
+/* ICON */
+.high-contrast i {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+/* INPUT */
+.high-contrast input {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+/* LINK */
+.high-contrast a {
+    color: #00ffff !important; /* cyan biar jelas */
+}
+
+/* TOOLTIP */
+.high-contrast .icon-tooltip {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+/* LEGEND PANEL */
+.high-contrast .legend-panel {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+/* ACCESSIBILITY PANEL */
+.high-contrast .accessibility-panel {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+/*12 monochrome mode dan perbesar kursor*/
+/* ===== MONOCHROME MODE ===== */
+.monochrome {
+    filter: grayscale(100%) !important;
+}
+
+/* Pastikan elemen penting tetap terlihat */
+.monochrome img,
+.monochrome video {
+    filter: grayscale(100%) contrast(1.1);
+}
+
+
+/* ===== BIG CURSOR ===== */
+.big-cursor,
+.big-cursor * {
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto !important;
+}

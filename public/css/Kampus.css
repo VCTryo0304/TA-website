@@ -1,0 +1,222 @@
+
+      body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #000;
+        }
+
+        header {
+            background: #f2ff9c;
+            padding: 30px 60px 50px;
+        }
+         /* Reset & Container Utama Header */
+    .header-full-width {
+        background-color: #f2ff9c; /* Warna lime sesuai gambar */
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .navbar-container {
+        max-width: 1400px; /* Menyesuaikan lebar konten */
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    /* Logo */
+    .header-logo img {
+        width: 250px;
+        height: 144px;
+        display: block;
+    }
+
+    /* Navigasi */
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-menu li a:hover {
+        color: #d23b3b;
+    }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 48px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            font-weight: 900;
+            color: #d23b3b;
+            margin: 0;
+        }
+
+        .hero img {
+            margin-top: 30px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .footer-campus {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-campus h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-campus p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .info-item {
+            margin-bottom: 14px;
+        }
+
+        .info-item b {
+            display: block;
+            font-weight: 700;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+            margin-right: 12px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #d23b3b;
+        }
+
+        .logo-ui {
+            width: 140px;
+            margin-top: 20px;
+        }
+
+        
+        .service-section {
+            max-width: 900px;
+            margin: 90px auto;
+            padding: 0 20px;
+            text-align: left; 
+        }
+
+
+        .service-item {
+            margin-bottom: 55px;
+        }
+
+        .service-desc {
+            margin-left: 0; 
+        }
+
+        .service-title {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .service-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #f5c76b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+             margin-top: 2px;
+        }
+
+        .service-icon2 {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #f4e7c3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+             margin-top: 2px;
+        }
+        .service-title h3 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 800;
+            color: #d23b3b;
+            text-transform: uppercase;
+        }
+        .service-question {
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .service-desc {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-left: 0; 
+        }
+
+
+        
