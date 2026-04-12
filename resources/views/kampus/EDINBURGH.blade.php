@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="internasional">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungedinburgh.jpeg') }}" alt="Gedung Universitas Edinburgh">
+        <img src="{{ asset('assets/img/gedungedinburgh.jpeg') }}" alt="Gedung Universitas Edinburgh"aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITY Of EDINBURGH </h5>
 

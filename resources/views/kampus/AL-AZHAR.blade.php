@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta" data-area="bali"data-layanan="pusat,karir">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungislamalazhar.webp') }}" alt="Gedung Universitas Islam Al-Azhar">
+        <img src="{{ asset('assets/img/gedungislamalazhar.webp') }}" alt="Gedung Universitas Islam Al-Azhar" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS ISLAM AL-AZHAR</h5>
 

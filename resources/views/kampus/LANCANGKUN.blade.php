@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta"  data-area="kalimantan"data-layanan="pusat,admisi,kesehatan,akomodasi">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedunglancangkuning.webp') }}" alt="Gedung Universitas LANCANG KUNING">
+        <img src="{{ asset('assets/img/gedunglancangkuning.webp') }}" alt="Gedung Universitas LANCANG KUNING" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS LANCANG KUNING</h5>
 

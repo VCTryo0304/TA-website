@@ -1,6 +1,6 @@
 <div class="col-md-4"data-kategori="swasta" data-area="jawa" data-layanan= "kesehatan">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedung-juanda.webp') }}" alt="Gedung Universitas Juanda">
+        <img src="{{ asset('assets/img/gedung-juanda.webp') }}" alt="Gedung Universitas Juanda" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS DJUANDA</h5>
 

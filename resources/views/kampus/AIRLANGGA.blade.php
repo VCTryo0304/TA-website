@@ -1,6 +1,6 @@
 <div class="col-md-4"data-kategori="negeri" data-area="jawa"data-layanan="pusat,karir,sosial,aksesbilitas,akomodasi">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungairlangga.webp') }}" alt="Gedung Universitas Airlangga">
+        <img src="{{ asset('assets/img/gedungairlangga.webp') }}" alt="Gedung Universitas Airlangga" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS AIRLANGGA</h5>
 

@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta" data-area="jawa">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungpamulang.webp') }}" alt="Gedung Universitas Pamulang">
+        <img src="{{ asset('assets/img/gedungpamulang.webp') }}" alt="Gedung Universitas Pamulang" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS PAMULANG</h5>
 

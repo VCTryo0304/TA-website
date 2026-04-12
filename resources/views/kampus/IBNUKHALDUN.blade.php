@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta" data-area="jawa" data-layanan="pusat,kesehatan">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungibnukhaldunbogor.webp') }}" alt="Gedung Universitas Ibnu Khaldun Bogor">
+        <img src="{{ asset('assets/img/gedungibnukhaldunbogor.webp') }}" alt="Gedung Universitas Ibnu Khaldun Bogor" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS IBNU KHALDUN BOGOR</h5>
 

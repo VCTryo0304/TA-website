@@ -415,30 +415,11 @@ document.getElementById("searchInput").addEventListener("input", function() {
 <div id="accessibilityTab" class="accessibility-tab" onclick="APR_PANEL.toggle()">
     <i class="fa-solid fa-universal-access" style="color: red; font-size: 40px;"></i>
 </div>
-<!--1.aria landmarks-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/aria.js"></script>
-<!--2.alt txt decorative flag-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/images.js"></script>
-<!--3.accessibility panel-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/panel.js?v=3"></script>
-<!--4.tts-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/tts.js?v=2"></script>
-<!--5. voicecommand-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/voice.js"></script>
-<!--6.magnifier&zoom-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/magnifier.js?v=2"></script>
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/zoom.js"></script>
-<!--7.text alignment-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/alignment.js"></script>
-<!--8.font change dyslecsyc-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/font.js"></script>
-<!--9.spacing control-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/spacing.js"></script>
-<!--10.animation control-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/animation.js"></script>
-<!--11 high contrast mode-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/highcontrast.js"></script>
-<!--12.monochrome mode-->
-<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/modules/visual-perbesarkursor.js"></script>
+<!--tampilan bundle-->
+<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/bundle/tampilan.bundle.js"></script>
+<!--teks bundle-->
+<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/bundle/teks.bundle.js"></script>
+<!--aksesibilitas bundle-->
+<script src="https://cdn.jsdelivr.net/gh/VCTryo0304/aksesibilitas-plugin-1303223025@latest/bundle/aksesibiltas.bundle.js"></script>
 </body>
 </html>

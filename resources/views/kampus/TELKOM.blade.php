@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedung_telkom_university.jpg') }}" alt="Gedung Universitas Telkom">
+        <img src="{{ asset('assets/img/gedung_telkom_university.jpg') }}" alt="Gedung Universitas Telkomaria-hidden="true" class="campus-image"
 
         <h5 class="mt-3">TELKOM UNIVERSITY </h5>
 

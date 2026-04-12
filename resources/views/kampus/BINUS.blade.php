@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="swasta" data-area="jawa" data-layanan="pusat,aksesbilitas,akomodasi,kesehatan">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/binus.webp') }}" alt="Gedung Universitas Bina Nusantara">
+        <img src="{{ asset('assets/img/binus.webp') }}" alt="Gedung Universitas Bina Nusantara" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS BINA NUSANTARA</h5>
 

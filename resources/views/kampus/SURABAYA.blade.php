@@ -1,6 +1,6 @@
 <div class="col-md-4" data-kategori="negeri" data-area="jawa"data-layanan="pusat,admisi,sosial,aksesbilitas,kesehatan">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungnegerisurabaya.webp') }}" alt="Gedung Universitas NEGERI SURABAYA">
+        <img src="{{ asset('assets/img/gedungnegerisurabaya.webp') }}" alt="Gedung Universitas NEGERI SURABAYA"aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS NEGERI SURABAYA</h5>
 

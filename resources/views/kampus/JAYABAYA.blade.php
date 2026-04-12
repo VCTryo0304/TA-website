@@ -1,6 +1,6 @@
 <div class="col-md-4"data-kategori="swasta" data-area="jawa" data-layanan="pusat">
     <div class="campus-card" tabindex="0">
-        <img src="{{ asset('assets/img/gedungJAYABAYA.webp') }}"alt="Gedung Universitas Andalas">
+        <img src="{{ asset('assets/img/gedungJAYABAYA.webp') }}"alt="Gedung Universitas Andalas" aria-hidden="true" class="campus-image">
 
         <h5 class="mt-3">UNIVERSITAS JAYABAYA</h5>
 
