@@ -1,6 +1,6 @@
 <div id="accessibilityPanel" class="access-panel hide" aria-hidden="true">
     <h2>Aksesibilitas</h2>
-    <button class="close-btn" data-apr-panel-toggle>✖</button>
+    <button class="close-btn" onclick="APR_PANEL.toggle()">✖</button>
     @include('button-aksesibilitas')
 </div>
 <!-- TAB AKSESIBILITAS -->
