@@ -395,6 +395,9 @@ document.getElementById("searchInput").addEventListener("input", function() {
         }
     });
 });
+            document.querySelector(".close-btn").addEventListener("click", () => {
+    console.log("clicked");
+});
 </script>
 
 
