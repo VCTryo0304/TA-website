@@ -401,7 +401,7 @@ document.getElementById("searchInput").addEventListener("input", function() {
 <!--3 ACCESSIBILITY PANEL -->
 <div id="accessibilityPanel" class="accessibility-panel" role="region" aria-label="Pengaturan Aksesibilitas">
 
-    <button class="close-btn" data-apr-panel-toggle>✖</button>
+    <button class="close-btn"  onclick="APR_PANEL.toggle()">✖</button>
 
     <h5>Aksesibilitas</h5>
     @include('button-aksesibilitas')
