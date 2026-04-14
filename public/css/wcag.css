@@ -75,7 +75,8 @@ body {
 }
 
 /* Hide images */
-.hide-images .campus-card img {
+.hide-images .campus-card img,
+.hide-images .campus-card .img-fluid {
     display: none !important;
 }
 
