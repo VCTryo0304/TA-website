@@ -234,9 +234,9 @@ html {
 /* ===============================
    HIDE IMAGE (CAMPUS CARD)
 ================================ */
-/*.hide-images .campus-card img {
+.hide-images .campus-card img {
     opacity: 0 !important;
     height: 0 !important;
     margin: 0 !important;
-}*/
+}
 
