@@ -75,9 +75,10 @@ body {
 }
 
 /* Hide images */
-.hide-images .campus-card img,
-.hide-images .campus-card .img-fluid {
-    display: none !important;
+.hide-images .campus-card img {
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
 }
 
 /* Pause animasi */
